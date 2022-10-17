@@ -10,7 +10,14 @@ export default boot(({ router }) => {
 
   router.addRoute('/', {
     name: 'auth.login',
-    path: '/login',
+    path: '/',
+    meta: { unauthOnly: true },
+    component: () => import('src/auth/pages/IdentityPasswordLoginPage.vue')
+  })
+
+  router.addRoute('/', {
+    name: 'auth.login',
+    path: '/',
     meta: { unauthOnly: true },
     component: () => import('src/auth/pages/IdentityPasswordLoginPage.vue')
   })

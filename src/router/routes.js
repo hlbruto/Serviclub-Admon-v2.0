@@ -3,24 +3,10 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/examples/Dashboard.vue') },
-      { path: '/Dashboard2', component: () => import('pages/examples/Dashboard2.vue') },
-      { path: '/Profile', component: () => import('pages/examples/UserProfile.vue') },
-      { path: '/Map', component: () => import('pages/examples/MapM.vue') },
-      { path: '/MapMarker', component: () => import('pages/examples/MapMarker.vue') },
-      { path: '/TreeTable', component: () => import('pages/examples/TreeTable.vue') },
-      { path: '/StreetView', component: () => import('pages/examples/StreetView.vue') },
-      { path: '/Cards', component: () => import('pages/examples/Cards.vue') },
-      { path: '/TablesP', component: () => import('pages/examples/TablesP.vue') },
-      { path: '/Contact', component: () => import('pages/examples/ContacT.vue') },
-      { path: '/Checkout', component: () => import('pages/examples/Checkout.vue') },
-      { path: '/Ecommerce', component: () => import('pages/examples/ProductCatalogues.vue') },
-      { path: '/Pagination', component: () => import('pages/examples/Pagination.vue') },
-      { path: '/Charts', component: () => import('pages/examples/ChartsP.vue') },
-      { path: '/Calendar', component: () => import('pages/examples/Calendar.vue') },
-      { path: '/Directory', component: () => import('pages/examples/Directory.vue') },
-      { path: '/Footer', component: () => import('pages/examples/Footer.vue') },
-      { path: '/CardHeader', component: () => import('pages/examples/CardHeader.vue') }
+      // { path: '', component: () => import('pages/examples/Dashboard2.vue') },
+      { path: '/pedidos', component: () => import('pages/PedidosPage.vue') },
+      { path: '/servicios', component: () => import('pages/ServiciosPage.vue') },
+      { path: '/instalaciones', component: () => import('pages/InstalacionesPage.vue') }
 
       // Not completed yet
       // {path: '/Taskboard', component: () => import('pages/TaskBoard.vue')},

@@ -666,4 +666,8 @@ export default defineComponent({
 })
 </script>
 
-<style scoped></style>
+<style lang="scss">
+.card{
+  color: #230d9efa;
+}
+</style>
